@@ -20,7 +20,7 @@ const Show = () => {
     };
 
     fetchData();
-  }, []);
+  }, [setData]);
   return (
     <div className="container mx-auto mt-8">
       <h1 className=" align-middletext-3xl font-bold mb-4">Product List</h1>
