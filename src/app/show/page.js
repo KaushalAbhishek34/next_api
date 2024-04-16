@@ -23,10 +23,10 @@ const Show = () => {
   }, []);
   return (
     <div className="container mx-auto mt-8">
-      <h1 className="text-3xl font-bold mb-4">Product List</h1>
+      <h1 className=" align-middletext-3xl font-bold mb-4">Product List</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {data.map(item => (
-          <div key={item.id} className="border p-4 rounded-lg shadow-md">
+          <div key={item.id} className="border p-4 rounded-lg shadow-xl">
             <img src={item.thumbnail} alt={item.title} className="w-full h-48 object-cover mb-4" />
             <h2 className="text-xl font-bold mb-2">{item.title}</h2>
             <p className="text-gray-600 mb-2">{item.description}</p>
